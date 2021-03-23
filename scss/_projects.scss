@@ -1,0 +1,109 @@
+// Project page
+
+.project {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 10px solid #fff;
+  background: #fff;
+  text-align: center;
+  div {
+    position: relative;
+
+    .header::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background: url("../img/work_header.jpg") no-repeat center center/cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+      opacity: 0.6;
+    }
+
+    .header::after {
+      background: rgba(0, 0, 0, 1);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: -1;
+    }
+
+    .header {
+      height: 310px;
+      z-index: 10;
+
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        font-size: 3rem;
+      }
+    }
+
+    .content {
+      color: #333;
+      padding: 1.6rem;
+
+      h2 {
+        font-size: 2rem;
+        padding: 1rem 0 2.2rem 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .flex-row {
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+
+        flex-wrap: wrap;
+        margin: 2rem 0;
+
+        .color-game::before {
+          background: url("../img/color-game.png") no-repeat center center/cover;
+        }
+
+        .calc:before {
+          background: url("../img/calc.png") no-repeat center center/cover;
+        }
+
+        .todo:before {
+          background: url("../img/todo.png") no-repeat center center/cover;
+        }
+
+        .weather:before {
+          background: url("../img/weather.png") no-repeat center center/cover;
+        }
+        .winery::before {
+          background: url("../img/winery.png") no-repeat center center/cover;
+        }
+        .tba::before {
+          background: rgb(104, 104, 104);
+        }
+      }
+    }
+  }
+}
+
+// Mobile View
+
+@media screen and (max-width: $md) {
+  .card {
+    margin: 1rem 0 !important;
+  }
+}
+@media screen and (max-width: $sm) {
+  h2 {
+    font-size: 1.6rem !important;
+  }
+}

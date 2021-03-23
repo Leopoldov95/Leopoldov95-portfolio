@@ -1,0 +1,120 @@
+//imports
+@import "utilities";
+@import "mediaQueries";
+@import "home";
+@import "projects";
+@import "tech";
+@import "about";
+@import "contact";
+
+// General Config
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, $bg-sec, $bg-primary);
+  color: $text-primary;
+  font-weight: 100;
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a:visited {
+  color: $text-sec;
+}
+
+a {
+  color: $text-sec;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $text-primary;
+}
+
+img {
+  max-width: 100%;
+}
+
+span {
+  font-weight: bold;
+}
+
+// Main CSS
+
+#app-wrapper {
+  background: $bg-primary;
+
+  margin: auto;
+  margin-top: 2rem;
+  /*   margin-right: 1rem;
+  margin-left: 1rem; */
+  max-height: 850px;
+  height: calc(100vh - 60px);
+
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* #app-nav::-webkit-scrollbar {
+    display: none;
+  } */
+  #app-nav {
+    overflow-y: auto;
+    min-width: 220px;
+    width: 100%;
+    border-right: 1px solid #333;
+    .nav-top {
+      text-align: center;
+
+      img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 1px solid $text-primary;
+      }
+
+      .mobile-menu {
+        display: none;
+      }
+    }
+
+    .nav-bottom {
+      position: relative;
+      height: 280px;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        bottom: 3px;
+      }
+      ul {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        li {
+          padding: 0 10px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+#app-content {
+  //width: 100%;
+  max-width: 1220px;
+  position: relative;
+  overflow-y: auto;
+  background-color: #fff;
+}

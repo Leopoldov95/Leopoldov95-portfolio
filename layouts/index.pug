@@ -1,0 +1,71 @@
+mixin mainNav(i)
+  ul.nav-menu
+    a(href="./index.html") 
+      li#home.nav-item(class=(i === 'home' ? 'active' : undefined)) 
+        i.fas.fa-home Home
+    a(href="./about.html")
+      li#about.nav-item(class=(i === 'about' ? 'active' : undefined))
+        i.fas.fa-user About
+    a(href="./projects.html")
+      li#projects.nav-item(class=(i === 'projects' ? 'active' : undefined))
+        i.fas.fa-cube Projects
+    a(href="./tech.html")
+      li#tech.nav-item(class=(i === 'tech' ? 'active' : undefined))
+        i.fas.fa-book-open Tech
+    a(href="./contact.html")
+      li#contact.nav-item(class=(i === 'contact' ? 'active' : undefined))
+        i.fas.fa-envelope Contact
+   
+
+doctype html 
+html(lang="en")
+  head 
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.14.0/css/all.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Leo Ortega - Web Developer
+  body 
+ 
+    #app-wrapper 
+      #app-nav 
+        .nav-top.p-1
+          div 
+            img(src="img/me/leo_profile.jpg", alt="my profile picture")
+          div 
+            h1 Leo Ortega 
+            h3 Web Developer 
+          .mobile-menu 
+            .topnav 
+              a(href="#home" class="mobile-active") 
+              a(href="javascript:void(0);" class="icon" id="mobile")
+                i.fa.fa-bars
+        .myLinks 
+          .nav-mid 
+            block mainNav
+              +mainNav('home')
+          .nav-bottom 
+            div 
+              ul 
+                li 
+                  a(href="https://codepen.io/leopoldov95" target="#") 
+                    i.fab.fa-codepen
+                li 
+                  a(href="https://github.com/Leopoldov95" target="#") 
+                    i.fab.fa-github
+                li 
+                  a(href="https://mobile.twitter.com/Leopold83920856" target="#") 
+                    i.fab.fa-twitter
+                li 
+                  a(href="https://www.facebook.com/leopoldoortegav" target="#") 
+                    i.fab.fa-facebook
+      #app-content
+        block content  
+          .home 
+            div 
+              h1 Welcome 
+              p My name is Leopoldo Ortega and I am a software developer based in Alexandria, Minnesota
+              a(href="./about.html")
+                i.home-about.fas.fa-user Learn more about me.
+    input(type="hidden" name="contact" data-netlify='true')

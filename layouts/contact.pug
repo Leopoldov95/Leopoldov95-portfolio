@@ -1,0 +1,27 @@
+extends index.pug 
+
+block mainNav 
+  +mainNav('contact')
+
+block content 
+
+  .contact
+    div 
+      .header 
+        h1 contact Me 
+      .content 
+        #contact-form 
+          form(name='contact' method='POST' data-netlify='true')
+            input(type='hidden' name='form-name' value='contact')
+            .form-border 
+              i.far.fa-user 
+              input(class="form-text" type="text" name="name" placeholder="Your Name" minlength="3" maxlength="30" pattern="[A-Za-z\\s]*$"  required)
+            .form-border 
+              i.far.fa-envelope 
+              input(class="form-text" type="email" name="email" placeholder="Your Email Adress" minlength="5" maxlength="50"  required)
+            textarea(id='form-area' name="text" placeholder="How Can I Help?" required)
+            button(class='submit-btn' type='submit')
+              i.far.fa-paper-plane Send Mail
+        .contact-footer 
+          p You can also reach me by clicking on any of my socials.
+
