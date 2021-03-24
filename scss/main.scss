@@ -60,11 +60,14 @@ span {
 
   max-width: 1500px;
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 1fr 4fr;
 
   #app-nav {
     overflow-y: auto;
-    width: 100%;
+    //width: 100%;
+    //width: 280px;
+    min-width: 240px;
+
     border-right: 1px solid #333;
     .nav-top {
       text-align: center;

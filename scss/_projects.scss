@@ -63,11 +63,14 @@
       }
 
       .flex-row {
-        display: flex;
+        /* display: flex;
         align-content: center;
-        justify-content: space-evenly;
-
         flex-wrap: wrap;
+        justify-content: space-evenly; */
+
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 3em;
         margin: 2rem 0;
 
         .color-game::before {

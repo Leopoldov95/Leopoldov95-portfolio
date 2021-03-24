@@ -186,7 +186,17 @@
       .content .about-content .about-img {
         float: none !important; } }
 
+@media screen and (max-width: 1200px) {
+  .flex-row {
+    grid-template-columns: auto auto !important; } }
+
+@media screen and (max-width: 930px) {
+  .flex-row {
+    grid-template-columns: auto !important; } }
+
 @media screen and (max-width: 768px) {
+  .flex-row {
+    grid-template-columns: auto !important; }
   .card {
     margin: 1rem 0 !important; } }
 
