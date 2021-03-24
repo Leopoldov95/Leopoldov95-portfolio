@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
     <title>Leo Ortega - Web Developer</title>
   </head>
   <body> 
@@ -24,11 +25,11 @@
         <div class="myLinks"> 
           <div class="nav-mid"> 
             <ul class="nav-menu"><a href="./index.html"> 
-                <li class="nav-item" id="home"> <i class="fas fa-home">Home</i></li></a><a href="./about.html">
-                <li class="nav-item" id="about"><i class="fas fa-user">About</i></li></a><a href="./projects.html">
-                <li class="nav-item" id="projects"><i class="fas fa-cube">Projects</i></li></a><a href="./tech.html">
-                <li class="nav-item active" id="tech"><i class="fas fa-book-open">Tech</i></li></a><a href="./contact.html">
-                <li class="nav-item" id="contact"><i class="fas fa-envelope">Contact</i></li></a></ul>
+                <li class="nav-item" id="home"> <i class="fas fa-home"> </i>Home</li></a><a href="./about.html">
+                <li class="nav-item" id="about"><i class="fas fa-user"> </i>About</li></a><a href="./projects.html">
+                <li class="nav-item" id="projects"><i class="fas fa-cube"> </i>Projects</li></a><a href="./tech.html">
+                <li class="nav-item active" id="tech"><i class="fas fa-book-open"> </i>Tech</li></a><a href="./contact.html">
+                <li class="nav-item" id="contact"><i class="fas fa-envelope"> </i>Contact</li></a></ul>
           </div>
           <div class="nav-bottom"> 
             <div> 
@@ -45,34 +46,44 @@
       <div id="app-content">
         <div class="tech"> 
           <div> 
-            <div class="header"> 
+            <div class="header inner-border"> 
               <h1>Technology </h1>
             </div>
             <div class="content">
               <h2>Technology I use </h2>
               <p>I mainly use vanilla HTML,CSS and javaScript for my web designs and we applications. I am getting more comfortable using SASS and am currently learning NodeJS and React to build larger and better web applications. My editor of choice is VSCode.</p>
-              <h1>For Web Design and User Interface 
-                <ul> 
-                  <li> <img class="logo" src="img/logos/html_css_logo.png"/>HTML and CSS</li>
-                  <li> <img class="logo" src="img/logos/sass_logo.png"/>SASS</li>
-                </ul>
-              </h1>
-              <h1>For Web Programming 
-                <ul> 
-                  <li> <img class="logo-sm" src="img/logos/js_logo.png"/>javaScript</li>
-                  <li> <img class="logo" src="img/logos/nodejs_logo.png"/>NodeJS</li>
-                </ul>
-              </h1>
-              <h1>What I'm currently learning 
-                <ul> 
-                  <li> <img class="logo-long" src="img/logos/react_logo.png"/>React</li>
-                </ul>
-              </h1>
+              <h1>For Web Design and User Interface </h1>
+              <ul> 
+                <li> <img class="logo" src="img/logos/html_css_logo.png"/>HTML & CSS</li>
+                <li> <img class="logo" src="img/logos/sass_logo.png"/>SASS</li>
+                <li> <img class="logo-sm" src="img/logos/pug_logo.png"/>PugJs</li>
+              </ul>
+              <h1>For Web Programming </h1>
+              <ul> 
+                <li> <img class="logo-sm" src="img/logos/js_logo.png"/>javaScript</li>
+                <li> <img class="logo" src="img/logos/nodejs_logo.png"/>NodeJS</li>
+              </ul>
+              <h1>What I'm currently learning </h1>
+              <ul> 
+                <li> <img class="logo-long" src="img/logos/react_logo.png"/>React</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
     <input type="hidden" name="contact" data-netlify="true"/>
+    <script>
+      document.getElementById("mobile").addEventListener("click", () => {
+      const x = document.querySelector(".myLinks");
+      x.classList.toggle("menu-active");
+      });
+      
+      for (let item of document.querySelectorAll(".myLinks .nav-item")) {
+      item.addEventListener("click", () => {
+      document.querySelector(".myLinks").classList.remove("menu-active");
+      });
+      }
+    </script>
   </body>
 </html>

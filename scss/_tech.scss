@@ -14,7 +14,8 @@
       content: "";
       top: 0;
       left: 0;
-      background: url("../img/code_header.jpg") no-repeat center center/cover;
+      background: url("../img/background/code_header.jpg") no-repeat center
+        center/cover;
       width: 100%;
       height: 100%;
       display: block;
@@ -72,20 +73,6 @@
         font-size: 1.5rem;
         background-color: $text-primary;
         margin: 1rem 0;
-      }
-    }
-  }
-}
-
-//Mobile View
-@media screen and (max-width: $md) {
-  .tech {
-    .content {
-      text-align: center;
-      li {
-        display: flex !important;
-        justify-content: space-between !important;
-        padding-right: 14px;
       }
     }
   }

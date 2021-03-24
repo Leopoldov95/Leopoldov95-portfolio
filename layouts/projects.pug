@@ -2,3 +2,43 @@ extends index.pug
 
 block mainNav 
   +mainNav('projects')
+
+block content 
+  .project
+    div 
+      .header.inner-border  
+        h1 My Projects 
+      .content 
+        h2 Projects I have created 
+        .flex-row 
+          .card 
+            div 
+              h4 Color Game Project 
+            .img.color-game 
+              a(href="https://codepen.io/leopoldov95/pen/oNYLpVv" target="#" class="btn-link") View Project
+          .card 
+            div 
+              h4 Calculator Project 
+            .img.calc 
+              a(href="https://codepen.io/leopoldov95/pen/oNzJmwP" target="#" class="btn-link") View Project
+          .card 
+            div 
+              h4 To Do List 
+            .img.todo 
+              a(href="https://codepen.io/leopoldov95/pen/abmPXOL" target="#" class="btn-link") View Project
+        .flex-row 
+          .card 
+            div 
+              h4 Weather App 
+            .img.weather 
+              a(href="https://weather-app-leopoldov95.netlify.app/" target="#" class="btn-link") View Project
+          .card 
+            div 
+              h4 Winery Home Page 
+            .img.winery 
+              a(href="https://tonne-winery-project.netlify.app/" target="#" class="btn-link") View Project
+          .card 
+            div 
+              h4 TBA 
+            .img.tba 
+              a(href="#" target="#" class="btn-link") View Project

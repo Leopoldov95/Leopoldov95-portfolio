@@ -2,19 +2,24 @@ mixin mainNav(i)
   ul.nav-menu
     a(href="./index.html") 
       li#home.nav-item(class=(i === 'home' ? 'active' : undefined)) 
-        i.fas.fa-home Home
+        i.fas.fa-home 
+        | Home
     a(href="./about.html")
       li#about.nav-item(class=(i === 'about' ? 'active' : undefined))
-        i.fas.fa-user About
+        i.fas.fa-user 
+        | About
     a(href="./projects.html")
       li#projects.nav-item(class=(i === 'projects' ? 'active' : undefined))
-        i.fas.fa-cube Projects
+        i.fas.fa-cube 
+        | Projects
     a(href="./tech.html")
       li#tech.nav-item(class=(i === 'tech' ? 'active' : undefined))
-        i.fas.fa-book-open Tech
+        i.fas.fa-book-open 
+        | Tech
     a(href="./contact.html")
       li#contact.nav-item(class=(i === 'contact' ? 'active' : undefined))
-        i.fas.fa-envelope Contact
+        i.fas.fa-envelope 
+        | Contact
    
 
 doctype html 
@@ -25,6 +30,7 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.14.0/css/all.css")
     link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/media.css")
     title Leo Ortega - Web Developer
   body 
  
@@ -62,10 +68,22 @@ html(lang="en")
                     i.fab.fa-facebook
       #app-content
         block content  
-          .home 
+          .home.inner-border 
             div 
               h1 Welcome 
               p My name is Leopoldo Ortega and I am a software developer based in Alexandria, Minnesota
               a(href="./about.html")
-                i.home-about.fas.fa-user Learn more about me.
+                i.home-about.fas.fa-user 
+                | Learn more about me.
     input(type="hidden" name="contact" data-netlify='true')
+    script. 
+          document.getElementById("mobile").addEventListener("click", () => {
+          const x = document.querySelector(".myLinks");
+          x.classList.toggle("menu-active");
+          });
+
+          for (let item of document.querySelectorAll(".myLinks .nav-item")) {
+          item.addEventListener("click", () => {
+          document.querySelector(".myLinks").classList.remove("menu-active");
+          });
+          }

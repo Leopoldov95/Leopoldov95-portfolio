@@ -1,7 +1,8 @@
 //Colors
-$bg-primary: #185890;
+$bg-primary: #074377;
+//$bg-primary: #185890;
 $bg-sec: rgb(82, 130, 172);
-$bg-dark: hsl(208, 71.4%, 23.1%);
+$bg-dark: rgb(8, 46, 80);
 $text-primary: #f5f5f5;
 $text-sec: #aec5d8;
 $nav-primary: rgb(174, 197, 216);
@@ -37,6 +38,10 @@ $md: 768px;
   }
 }
 
+.inner-border {
+  outline: 1px solid #fff;
+  outline-offset: -10px;
+}
 .logo {
   height: 100px;
   width: 150px;

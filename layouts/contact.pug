@@ -7,7 +7,7 @@ block content
 
   .contact
     div 
-      .header 
+      .header.inner-border 
         h1 contact Me 
       .content 
         #contact-form 
@@ -21,7 +21,8 @@ block content
               input(class="form-text" type="email" name="email" placeholder="Your Email Adress" minlength="5" maxlength="50"  required)
             textarea(id='form-area' name="text" placeholder="How Can I Help?" required)
             button(class='submit-btn' type='submit')
-              i.far.fa-paper-plane Send Mail
+              i.far.fa-paper-plane 
+              | Send Mail
         .contact-footer 
           p You can also reach me by clicking on any of my socials.
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
     <title>Leo Ortega - Web Developer</title>
   </head>
   <body> 
@@ -24,11 +25,11 @@
         <div class="myLinks"> 
           <div class="nav-mid"> 
             <ul class="nav-menu"><a href="./index.html"> 
-                <li class="nav-item" id="home"> <i class="fas fa-home">Home</i></li></a><a href="./about.html">
-                <li class="nav-item active" id="about"><i class="fas fa-user">About</i></li></a><a href="./projects.html">
-                <li class="nav-item" id="projects"><i class="fas fa-cube">Projects</i></li></a><a href="./tech.html">
-                <li class="nav-item" id="tech"><i class="fas fa-book-open">Tech</i></li></a><a href="./contact.html">
-                <li class="nav-item" id="contact"><i class="fas fa-envelope">Contact</i></li></a></ul>
+                <li class="nav-item" id="home"> <i class="fas fa-home"> </i>Home</li></a><a href="./about.html">
+                <li class="nav-item active" id="about"><i class="fas fa-user"> </i>About</li></a><a href="./projects.html">
+                <li class="nav-item" id="projects"><i class="fas fa-cube"> </i>Projects</li></a><a href="./tech.html">
+                <li class="nav-item" id="tech"><i class="fas fa-book-open"> </i>Tech</li></a><a href="./contact.html">
+                <li class="nav-item" id="contact"><i class="fas fa-envelope"> </i>Contact</li></a></ul>
           </div>
           <div class="nav-bottom"> 
             <div> 
@@ -45,7 +46,7 @@
       <div id="app-content">
         <div class="about"> 
           <div> 
-            <div class="header"> 
+            <div class="header inner-border">
               <h1>About </h1>
             </div>
             <div class="content"> 
@@ -56,6 +57,8 @@
                 </div>
                 <div> 
                   <p>My name is <span>Leo Ortega</span> and I am a software developer based in Alexandria, Minnesota. I have spent the last few months learning about frontend web development and am eager to build fully interactive web applications.</p>
+                  <p>I love learning about new technologies and I am looking forward to helping you on your next project. You can view my <a href="https://raw.githubusercontent.com/Leopoldov95/pug-portfolio/main/test.pdf" download>resume</a> here.</p>
+                  <p>My wife and I just relocated here to spend more times outdoors and in nature.</p>
                 </div>
               </div>
             </div>
@@ -64,5 +67,17 @@
       </div>
     </div>
     <input type="hidden" name="contact" data-netlify="true"/>
+    <script>
+      document.getElementById("mobile").addEventListener("click", () => {
+      const x = document.querySelector(".myLinks");
+      x.classList.toggle("menu-active");
+      });
+      
+      for (let item of document.querySelectorAll(".myLinks .nav-item")) {
+      item.addEventListener("click", () => {
+      document.querySelector(".myLinks").classList.remove("menu-active");
+      });
+      }
+    </script>
   </body>
 </html>

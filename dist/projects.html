@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
     <title>Leo Ortega - Web Developer</title>
   </head>
   <body> 
@@ -24,11 +25,11 @@
         <div class="myLinks"> 
           <div class="nav-mid"> 
             <ul class="nav-menu"><a href="./index.html"> 
-                <li class="nav-item" id="home"> <i class="fas fa-home">Home</i></li></a><a href="./about.html">
-                <li class="nav-item" id="about"><i class="fas fa-user">About</i></li></a><a href="./projects.html">
-                <li class="nav-item active" id="projects"><i class="fas fa-cube">Projects</i></li></a><a href="./tech.html">
-                <li class="nav-item" id="tech"><i class="fas fa-book-open">Tech</i></li></a><a href="./contact.html">
-                <li class="nav-item" id="contact"><i class="fas fa-envelope">Contact</i></li></a></ul>
+                <li class="nav-item" id="home"> <i class="fas fa-home"> </i>Home</li></a><a href="./about.html">
+                <li class="nav-item" id="about"><i class="fas fa-user"> </i>About</li></a><a href="./projects.html">
+                <li class="nav-item active" id="projects"><i class="fas fa-cube"> </i>Projects</li></a><a href="./tech.html">
+                <li class="nav-item" id="tech"><i class="fas fa-book-open"> </i>Tech</li></a><a href="./contact.html">
+                <li class="nav-item" id="contact"><i class="fas fa-envelope"> </i>Contact</li></a></ul>
           </div>
           <div class="nav-bottom"> 
             <div> 
@@ -43,14 +44,70 @@
         </div>
       </div>
       <div id="app-content">
-        <div class="home"> 
+        <div class="project">
           <div> 
-            <h1>Welcome </h1>
-            <p>My name is Leopoldo Ortega and I am a software developer based in Alexandria, Minnesota</p><a href="./about.html"><i class="home-about fas fa-user">Learn more about me.</i></a>
+            <div class="header inner-border"> 
+              <h1>My Projects </h1>
+            </div>
+            <div class="content"> 
+              <h2>Projects I have created </h2>
+              <div class="flex-row"> 
+                <div class="card"> 
+                  <div> 
+                    <h4>Color Game Project </h4>
+                  </div>
+                  <div class="img color-game"> <a class="btn-link" href="https://codepen.io/leopoldov95/pen/oNYLpVv" target="#">View Project</a></div>
+                </div>
+                <div class="card"> 
+                  <div> 
+                    <h4>Calculator Project </h4>
+                  </div>
+                  <div class="img calc"> <a class="btn-link" href="https://codepen.io/leopoldov95/pen/oNzJmwP" target="#">View Project</a></div>
+                </div>
+                <div class="card"> 
+                  <div> 
+                    <h4>To Do List </h4>
+                  </div>
+                  <div class="img todo"> <a class="btn-link" href="https://codepen.io/leopoldov95/pen/abmPXOL" target="#">View Project</a></div>
+                </div>
+              </div>
+              <div class="flex-row"> 
+                <div class="card"> 
+                  <div> 
+                    <h4>Weather App </h4>
+                  </div>
+                  <div class="img weather"> <a class="btn-link" href="https://weather-app-leopoldov95.netlify.app/" target="#">View Project</a></div>
+                </div>
+                <div class="card"> 
+                  <div> 
+                    <h4>Winery Home Page </h4>
+                  </div>
+                  <div class="img winery"> <a class="btn-link" href="https://tonne-winery-project.netlify.app/" target="#">View Project</a></div>
+                </div>
+                <div class="card"> 
+                  <div> 
+                    <h4>TBA </h4>
+                  </div>
+                  <div class="img tba"> <a class="btn-link" href="#" target="#">View Project</a></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <input type="hidden" name="contact" data-netlify="true"/>
+    <script>
+      document.getElementById("mobile").addEventListener("click", () => {
+      const x = document.querySelector(".myLinks");
+      x.classList.toggle("menu-active");
+      });
+      
+      for (let item of document.querySelectorAll(".myLinks .nav-item")) {
+      item.addEventListener("click", () => {
+      document.querySelector(".myLinks").classList.remove("menu-active");
+      });
+      }
+    </script>
   </body>
 </html>

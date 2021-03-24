@@ -11,10 +11,14 @@
   padding: 2rem; }
 
 .active {
-  background-color: #113e65;
+  background-color: #082e50;
   border-right: 6px solid #5282ac; }
   .active i {
     color: #1a619e; }
+
+.inner-border {
+  outline: 1px solid #fff;
+  outline-offset: -10px; }
 
 .logo {
   height: 100px;
@@ -51,7 +55,7 @@
 .submit-btn {
   padding: 12px 18px;
   color: #aec5d8;
-  background-color: #185890;
+  background-color: #074377;
   border-radius: 5px;
   font-size: 1rem;
   border: none; }
@@ -97,81 +101,13 @@
       display: block; }
 
 /*  */
-@media screen and (max-width: 768px) {
-  body {
-    height: 100% !important; }
-  #app-wrapper {
-    margin-top: 4rem !important; } }
-
-@media screen and (max-width: 480px) {
-  body {
-    padding: 0 !important; }
-  #app-wrapper {
-    display: flex !important;
-    flex-direction: column !important;
-    margin: 10px !important;
-    height: 100% !important; }
-    #app-wrapper #app-nav {
-      margin: 0 !important;
-      width: 100% !important;
-      max-width: 480px !important;
-      overflow-y: visible !important;
-      background: #5555;
-      margin: auto;
-      height: 100% !important;
-      border-right: none !important; }
-      #app-wrapper #app-nav .nav-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 10px 16px; }
-        #app-wrapper #app-nav .nav-top img {
-          height: 80px !important;
-          width: 80px !important;
-          margin-right: 8px; }
-        #app-wrapper #app-nav .nav-top h1 {
-          font-size: 1.5rem;
-          padding-bottom: 6px; }
-        #app-wrapper #app-nav .nav-top h3 {
-          font-size: 1rem; }
-    #app-wrapper .mobile-menu {
-      display: block !important;
-      /* Style navigation menu links */
-      /* Style the hamburger menu */
-      /* Add a grey background color on mouse-over */
-      /* Style the active link (or home/logo) */ }
-      #app-wrapper .mobile-menu .topnav a {
-        color: white;
-        font-size: 25px; }
-      #app-wrapper .mobile-menu .topnav a:hover {
-        background-color: #185890;
-        color: #fff; }
-      #app-wrapper .mobile-menu .mobile-active {
-        color: white; }
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .myLinks {
-    display: none;
-    opacity: 0;
-    height: 360px;
-    width: 95% !important;
-    background-color: #185890;
-    z-index: 50 !important;
-    position: absolute !important;
-    transition: opacity 1s ease-out; }
-  .menu-active {
-    opacity: 1;
-    display: block; }
-  .nav-bottom {
-    height: 60px !important; }
-    .nav-bottom ul {
-      left: 80px !important; } }
-
 .home {
   position: relative;
   width: 100%;
   height: 100%;
   border: 10px solid #fff;
-  z-index: 10; }
+  z-index: 10;
+  outline-offset: -20px !important; }
   .home div {
     position: absolute;
     top: 50%;
@@ -194,7 +130,7 @@
   content: "";
   top: 0;
   left: 0;
-  background: url("../img/lake.jpg") no-repeat center center/cover;
+  background: url("../img/background/lake.jpg") no-repeat center center/cover;
   width: 100%;
   height: 100%;
   display: block;
@@ -211,14 +147,6 @@
   display: block;
   z-index: -1; }
 
-@media screen and (max-width: 480px) {
-  .home {
-    height: 100vh !important; }
-    .home h1 {
-      font-size: 40px !important; }
-    .home p {
-      font-size: 1.2rem !important; } }
-
 .project {
   height: 100%;
   width: 100%;
@@ -233,7 +161,7 @@
       content: "";
       top: 0;
       left: 0;
-      background: url("../img/work_header.jpg") no-repeat center center/cover;
+      background: url("../img/background/work_header.jpg") no-repeat center center/cover;
       width: 100%;
       height: 100%;
       display: block;
@@ -273,25 +201,17 @@
         flex-wrap: wrap;
         margin: 2rem 0; }
         .project div .content .flex-row .color-game::before {
-          background: url("../img/color-game.png") no-repeat center center/cover; }
+          background: url("../img/projects/color-game.png") no-repeat center center/cover; }
         .project div .content .flex-row .calc:before {
-          background: url("../img/calc.png") no-repeat center center/cover; }
+          background: url("../img/projects/calc.png") no-repeat center center/cover; }
         .project div .content .flex-row .todo:before {
-          background: url("../img/todo.png") no-repeat center center/cover; }
+          background: url("../img/projects/todo.png") no-repeat center center/cover; }
         .project div .content .flex-row .weather:before {
-          background: url("../img/weather.png") no-repeat center center/cover; }
+          background: url("../img/projects/weather.png") no-repeat center center/cover; }
         .project div .content .flex-row .winery::before {
-          background: url("../img/winery.png") no-repeat center center/cover; }
+          background: url("../img/projects/winery.png") no-repeat center center/cover; }
         .project div .content .flex-row .tba::before {
           background: #686868; }
-
-@media screen and (max-width: 768px) {
-  .card {
-    margin: 1rem 0 !important; } }
-
-@media screen and (max-width: 480px) {
-  h2 {
-    font-size: 1.6rem !important; } }
 
 .tech {
   height: 100%;
@@ -306,7 +226,7 @@
       content: "";
       top: 0;
       left: 0;
-      background: url("../img/code_header.jpg") no-repeat center center/cover;
+      background: url("../img/background/code_header.jpg") no-repeat center center/cover;
       width: 100%;
       height: 100%;
       display: block;
@@ -350,14 +270,6 @@
         background-color: #f5f5f5;
         margin: 1rem 0; }
 
-@media screen and (max-width: 768px) {
-  .tech .content {
-    text-align: center; }
-    .tech .content li {
-      display: flex !important;
-      justify-content: space-between !important;
-      padding-right: 14px; } }
-
 .about {
   height: 100%;
   width: 100%;
@@ -374,7 +286,7 @@
       content: "";
       top: 0;
       left: 0;
-      background: url("../img/about_header.jpg") no-repeat center center/cover;
+      background: url("../img/background/about_header.jpg") no-repeat center center/cover;
       width: 100%;
       height: 100%;
       display: block;
@@ -418,14 +330,6 @@
         .about div .content .about-content .about-img p {
           font-size: 12px; }
 
-@media screen and (max-width: 480px) {
-  .content {
-    flex-direction: column !important; }
-    .content .about-content {
-      display: block !important; }
-      .content .about-content .about-img {
-        float: none !important; } }
-
 .contact {
   height: 100%;
   width: 100%;
@@ -439,7 +343,7 @@
       content: "";
       top: 0;
       left: 0;
-      background: url("../img/contact_header.jpg") no-repeat center center/cover;
+      background: url("../img/background/contact_header.jpg") no-repeat center center/cover;
       width: 100%;
       height: 100%;
       display: block;
@@ -520,24 +424,6 @@
     color: #333;
     font-size: 14px; }
 
-@media screen and (max-width: 768px) {
-  #contact-form {
-    max-width: 480px !important;
-    width: 100% !important;
-    background-color: #aec5d8 !important; } }
-
-@media screen and (max-width: 480px) {
-  #contact-form {
-    background-color: #fff !important; }
-    #contact-form form {
-      width: 100% !important; }
-      #contact-form form .form-border {
-        width: 150% !important; }
-      #contact-form form .form-text {
-        width: 80% !important; }
-      #contact-form form #form-area {
-        width: 150% !important; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -545,10 +431,12 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(to right, #5282ac, #185890);
+  background-image: linear-gradient(to right, #5282ac, #074377);
   color: #f5f5f5;
   font-weight: 100;
-  padding: 1rem; }
+  padding: 1rem;
+  max-height: 100vh;
+  height: 100%; }
 
 li {
   list-style: none; }
@@ -570,22 +458,15 @@ span {
   font-weight: bold; }
 
 #app-wrapper {
-  background: #185890;
+  background: #074377;
   margin: auto;
-  margin-top: 2rem;
-  /*   margin-right: 1rem;
-  margin-left: 1rem; */
-  max-height: 850px;
-  height: calc(100vh - 60px);
+  margin-top: 10px;
+  height: calc(100vh - 50px);
   max-width: 1500px;
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  /* #app-nav::-webkit-scrollbar {
-    display: none;
-  } */ }
+  grid-template-columns: 280px 1fr; }
   #app-wrapper #app-nav {
     overflow-y: auto;
-    min-width: 220px;
     width: 100%;
     border-right: 1px solid #333; }
     #app-wrapper #app-nav .nav-top {
@@ -597,9 +478,13 @@ span {
         border: 1px solid #f5f5f5; }
       #app-wrapper #app-nav .nav-top .mobile-menu {
         display: none; }
-    #app-wrapper #app-nav .nav-bottom {
+    #app-wrapper #app-nav .myLinks {
       position: relative;
-      height: 280px; }
+      height: 70%; }
+    #app-wrapper #app-nav .nav-bottom {
+      position: absolute;
+      bottom: 10px;
+      left: 50%; }
       #app-wrapper #app-nav .nav-bottom div {
         display: flex;
         justify-content: center;

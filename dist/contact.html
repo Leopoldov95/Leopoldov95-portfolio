@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
     <title>Leo Ortega - Web Developer</title>
   </head>
   <body> 
@@ -24,11 +25,11 @@
         <div class="myLinks"> 
           <div class="nav-mid"> 
             <ul class="nav-menu"><a href="./index.html"> 
-                <li class="nav-item" id="home"> <i class="fas fa-home">Home</i></li></a><a href="./about.html">
-                <li class="nav-item" id="about"><i class="fas fa-user">About</i></li></a><a href="./projects.html">
-                <li class="nav-item" id="projects"><i class="fas fa-cube">Projects</i></li></a><a href="./tech.html">
-                <li class="nav-item" id="tech"><i class="fas fa-book-open">Tech</i></li></a><a href="./contact.html">
-                <li class="nav-item active" id="contact"><i class="fas fa-envelope">Contact</i></li></a></ul>
+                <li class="nav-item" id="home"> <i class="fas fa-home"> </i>Home</li></a><a href="./about.html">
+                <li class="nav-item" id="about"><i class="fas fa-user"> </i>About</li></a><a href="./projects.html">
+                <li class="nav-item" id="projects"><i class="fas fa-cube"> </i>Projects</li></a><a href="./tech.html">
+                <li class="nav-item" id="tech"><i class="fas fa-book-open"> </i>Tech</li></a><a href="./contact.html">
+                <li class="nav-item active" id="contact"><i class="fas fa-envelope"> </i>Contact</li></a></ul>
           </div>
           <div class="nav-bottom"> 
             <div> 
@@ -45,7 +46,7 @@
       <div id="app-content">
         <div class="contact">
           <div> 
-            <div class="header"> 
+            <div class="header inner-border"> 
               <h1>contact Me </h1>
             </div>
             <div class="content"> 
@@ -59,7 +60,7 @@
                     <input class="form-text" type="email" name="email" placeholder="Your Email Adress" minlength="5" maxlength="50" required="required"/>
                   </div>
                   <textarea id="form-area" name="text" placeholder="How Can I Help?" required="required"></textarea>
-                  <button class="submit-btn" type="submit"><i class="far fa-paper-plane">Send Mail</i></button>
+                  <button class="submit-btn" type="submit"><i class="far fa-paper-plane"> </i>Send Mail</button>
                 </form>
               </div>
               <div class="contact-footer"> 
@@ -71,5 +72,17 @@
       </div>
     </div>
     <input type="hidden" name="contact" data-netlify="true"/>
+    <script>
+      document.getElementById("mobile").addEventListener("click", () => {
+      const x = document.querySelector(".myLinks");
+      x.classList.toggle("menu-active");
+      });
+      
+      for (let item of document.querySelectorAll(".myLinks .nav-item")) {
+      item.addEventListener("click", () => {
+      document.querySelector(".myLinks").classList.remove("menu-active");
+      });
+      }
+    </script>
   </body>
 </html>

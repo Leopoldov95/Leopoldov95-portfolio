@@ -19,7 +19,8 @@
       content: "";
       top: 0;
       left: 0;
-      background: url("../img/about_header.jpg") no-repeat center center/cover;
+      background: url("../img/background/about_header.jpg") no-repeat center
+        center/cover;
       width: 100%;
       height: 100%;
       display: block;
@@ -83,20 +84,6 @@
             font-size: 12px;
           }
         }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: $sm) {
-  .content {
-    flex-direction: column !important;
-
-    .about-content {
-      display: block !important;
-
-      .about-img {
-        float: none !important;
       }
     }
   }
