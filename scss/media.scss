@@ -182,17 +182,16 @@
 //Contact
 // Mobile View
 
-@media screen and (max-width: $md) {
+@media screen and (max-width: 850px) {
   #contact-form {
+    background-color: #fff !important;
     max-width: 480px !important;
     width: 100% !important;
-    background-color: #fff !important;
   }
 }
 
 @media screen and (max-width: $sm) {
   #contact-form {
-    background-color: #fff !important;
     form {
       width: 100% !important;
 
