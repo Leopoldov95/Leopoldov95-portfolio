@@ -84,6 +84,12 @@
             font-size: 12px;
           }
         }
+        a {
+          color: $bg-sec;
+        }
+        a:hover {
+          color: $text-sec;
+        }
       }
     }
   }
