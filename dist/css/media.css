@@ -1,3 +1,12 @@
+.load {
+  animation: fadein 1s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .my-1 {
   margin: 1rem 0; }
 
@@ -212,20 +221,18 @@
       justify-content: space-between !important;
       padding-right: 14px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   #contact-form {
+    background-color: #fff !important;
     max-width: 480px !important;
-    width: 100% !important;
-    background-color: #aec5d8 !important; } }
+    width: 100% !important; } }
 
 @media screen and (max-width: 480px) {
-  #contact-form {
-    background-color: #fff !important; }
-    #contact-form form {
-      width: 100% !important; }
-      #contact-form form .form-border {
-        width: 150% !important; }
-      #contact-form form .form-text {
-        width: 80% !important; }
-      #contact-form form #form-area {
-        width: 150% !important; } }
+  #contact-form form {
+    width: 100% !important; }
+    #contact-form form .form-border {
+      width: 150% !important; }
+    #contact-form form .form-text {
+      width: 80% !important; }
+    #contact-form form #form-area {
+      width: 150% !important; } }

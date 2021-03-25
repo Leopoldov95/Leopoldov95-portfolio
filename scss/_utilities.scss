@@ -11,6 +11,20 @@ $nav-sec: hsl(208, 71.4%, 36.2%);
 $sm: 480px;
 $md: 768px;
 
+//animation on load
+.load {
+  animation: fadein ease 600ms;
+
+  @keyframes fadein {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
 // margin
 .my-1 {
   margin: 1rem 0;
