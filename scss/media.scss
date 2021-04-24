@@ -22,7 +22,7 @@
     #app-nav {
       margin: 0 !important;
       width: 100% !important;
-      max-width: 480px !important;
+      max-width: $sm i !important;
       overflow-y: visible !important;
 
       background: #5555;
@@ -63,10 +63,6 @@
       }
 
       /* Style the hamburger menu */
-      // .topnav a.icon {
-      // background: black;
-      //display: block;
-      // }
 
       /* Add a grey background color on mouse-over */
       .topnav a:hover {
@@ -83,17 +79,14 @@
   /* Hide the links inside the navigation menu (except for logo/home) */
   .myLinks {
     display: none;
-    opacity: 0;
     height: 360px !important;
     width: 95% !important;
     background-color: $bg-primary;
-    z-index: 50 !important;
+    z-index: 20 !important;
     position: absolute !important;
-    transition: opacity 1s ease-out;
   }
 
   .menu-active {
-    opacity: 1;
     display: block;
   }
 

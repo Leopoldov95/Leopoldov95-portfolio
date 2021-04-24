@@ -8,7 +8,7 @@ $text-sec: #aec5d8;
 $nav-primary: rgb(174, 197, 216);
 $nav-sec: hsl(208, 71.4%, 36.2%);
 // screen breakpoints
-$sm: 480px;
+$sm: 590px;
 $md: 768px;
 
 //animation on load
@@ -66,9 +66,9 @@ $md: 768px;
   width: 80px;
 }
 
-.logo-long {
-  height: 50px;
-  width: 100px;
+.logo-lg {
+  height: 60px;
+  width: 80px;
 }
 .nav-item {
   font-size: 22px;
@@ -138,12 +138,19 @@ $md: 768px;
     transition: all ease 500ms;
     a {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       text-align: center;
       display: none;
       transition: all ease 500ms;
+    }
+    .btn-git {
+      top: 70%;
+      width: 7rem;
+      i {
+        padding-right: 8px;
+      }
     }
   }
 

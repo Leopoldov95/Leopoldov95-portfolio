@@ -1,9 +1,9 @@
 .load {
-  animation: fadein 1s; }
+  animation: fadein ease 600ms; }
 
 @keyframes fadein {
   from {
-    opacity: 0; }
+    opacity: 0.5; }
   to {
     opacity: 1; } }
 
@@ -37,9 +37,9 @@
   height: 80px;
   width: 80px; }
 
-.logo-long {
-  height: 50px;
-  width: 100px; }
+.logo-lg {
+  height: 60px;
+  width: 80px; }
 
 .nav-item {
   font-size: 22px;
@@ -98,12 +98,17 @@
     transition: all ease 500ms; }
     .card .img a {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       text-align: center;
       display: none;
       transition: all ease 500ms; }
+    .card .img .btn-git {
+      top: 70%;
+      width: 7rem; }
+      .card .img .btn-git i {
+        padding-right: 8px; }
   .card .img:hover {
     transform: scale(1.1); }
     .card .img:hover a {
@@ -116,7 +121,7 @@
   #app-wrapper {
     margin-top: 4rem !important; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 590px) {
   body {
     padding: 0 !important; }
   #app-wrapper {
@@ -127,7 +132,7 @@
     #app-wrapper #app-nav {
       margin: 0 !important;
       width: 100% !important;
-      max-width: 480px !important;
+      max-width: 590px i !important;
       overflow-y: visible !important;
       background: #5555;
       margin: auto;
@@ -164,22 +169,19 @@
   /* Hide the links inside the navigation menu (except for logo/home) */
   .myLinks {
     display: none;
-    opacity: 0;
     height: 360px !important;
     width: 95% !important;
     background-color: #074377;
-    z-index: 50 !important;
-    position: absolute !important;
-    transition: opacity 1s ease-out; }
+    z-index: 20 !important;
+    position: absolute !important; }
   .menu-active {
-    opacity: 1;
     display: block; }
   .nav-bottom {
     height: 60px !important; }
     .nav-bottom ul {
       left: 80px !important; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 590px) {
   .home {
     height: 100vh !important; }
     .home h1 {
@@ -187,7 +189,7 @@
     .home p {
       font-size: 1.2rem !important; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 590px) {
   .content {
     flex-direction: column !important; }
     .content .about-content {
@@ -209,7 +211,7 @@
   .card {
     margin: 1rem 0 !important; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 590px) {
   h2 {
     font-size: 1.6rem !important; } }
 
@@ -227,7 +229,7 @@
     max-width: 480px !important;
     width: 100% !important; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 590px) {
   #contact-form form {
     width: 100% !important; }
     #contact-form form .form-border {

@@ -1,9 +1,9 @@
 .load {
-  animation: fadein 1s; }
+  animation: fadein ease 600ms; }
 
 @keyframes fadein {
   from {
-    opacity: 0; }
+    opacity: 0.5; }
   to {
     opacity: 1; } }
 
@@ -37,9 +37,9 @@
   height: 80px;
   width: 80px; }
 
-.logo-long {
-  height: 50px;
-  width: 100px; }
+.logo-lg {
+  height: 60px;
+  width: 80px; }
 
 .nav-item {
   font-size: 22px;
@@ -98,12 +98,17 @@
     transition: all ease 500ms; }
     .card .img a {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       text-align: center;
       display: none;
       transition: all ease 500ms; }
+    .card .img .btn-git {
+      top: 70%;
+      width: 7rem; }
+      .card .img .btn-git i {
+        padding-right: 8px; }
   .card .img:hover {
     transform: scale(1.1); }
     .card .img:hover a {
@@ -204,26 +209,22 @@
       .project div .content p {
         font-size: 1.2rem; }
       .project div .content .flex-row {
-        /* display: flex;
-        align-content: center;
-        flex-wrap: wrap;
-        justify-content: space-evenly; */
         display: inline-grid;
         grid-template-columns: auto auto auto;
         grid-gap: 3em;
         margin: 2rem 0; }
-        .project div .content .flex-row .color-game::before {
-          background: url("../img/projects/color-game.png") no-repeat center center/cover; }
+        .project div .content .flex-row .pokedex::before {
+          background: url("../img/projects/pokedex.png") no-repeat center center/cover; }
         .project div .content .flex-row .calc:before {
           background: url("../img/projects/calc.png") no-repeat center center/cover; }
-        .project div .content .flex-row .todo:before {
-          background: url("../img/projects/todo.png") no-repeat center center/cover; }
+        .project div .content .flex-row .blue-shield:before {
+          background: url("../img/projects/blue-shield.png") no-repeat center center/cover; }
         .project div .content .flex-row .weather:before {
           background: url("../img/projects/weather.png") no-repeat center center/cover; }
         .project div .content .flex-row .winery::before {
           background: url("../img/projects/winery.png") no-repeat center center/cover; }
-        .project div .content .flex-row .tba::before {
-          background: #686868; }
+        .project div .content .flex-row .qwixx::before {
+          background: url("../img/projects/qwixxJS.png") no-repeat center center/cover; }
 
 .tech {
   height: 100%;
@@ -266,6 +267,8 @@
     .tech div .content {
       color: #333;
       padding: 1.6rem; }
+      .tech div .content .pug-logo {
+        margin-left: 10px; }
       .tech div .content h2 {
         font-size: 2rem;
         padding: 1rem 0 2.2rem 0; }
@@ -446,7 +449,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   background-image: linear-gradient(to right, #5282ac, #074377);
   color: #f5f5f5;
   font-weight: 100;
@@ -465,7 +468,8 @@ a {
   text-decoration: none; }
 
 a:hover {
-  color: #f5f5f5; }
+  color: #f5f5f5;
+  cursor: pointer; }
 
 img {
   max-width: 100%; }
@@ -474,7 +478,6 @@ span {
   font-weight: bold; }
 
 #app-wrapper {
-  background: #074377;
   margin: auto;
   margin-top: 10px;
   height: calc(100vh - 50px);
@@ -483,6 +486,7 @@ span {
   grid-template-columns: 1fr 4fr; }
   #app-wrapper #app-nav {
     overflow-y: auto;
+    background: #074377;
     min-width: 240px;
     border-right: 1px solid #333; }
     #app-wrapper #app-nav .nav-top {
@@ -496,7 +500,7 @@ span {
         display: none; }
     #app-wrapper #app-nav .myLinks {
       position: relative;
-      height: 70%; }
+      height: 60%; }
     #app-wrapper #app-nav .nav-bottom {
       position: absolute;
       bottom: 10px;
@@ -516,6 +520,8 @@ span {
         #app-wrapper #app-nav .nav-bottom ul li {
           padding: 0 10px;
           font-size: 1.4rem; }
+        #app-wrapper #app-nav .nav-bottom ul li:hover {
+          cursor: pointer; }
 
 #app-content {
   max-width: 1220px;
