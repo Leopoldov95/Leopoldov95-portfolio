@@ -13,17 +13,17 @@
   <body> 
     <div id="app-wrapper"> 
       <div id="app-nav"> 
-        <div class="nav-top p-1">
-          <div> <img src="img/me/leo_profile.jpg" alt="my profile picture"/></div>
-          <div> 
-            <h1>Leo Ortega </h1>
-            <h3>Web Developer </h3>
+        <div>
+          <div class="nav-top p-1">
+            <div> <img src="img/me/leo_profile.jpg" alt="my profile picture"/></div>
+            <div> 
+              <h1>Leo Ortega </h1>
+              <h3>Web Developer </h3>
+            </div>
+            <div class="mobile-menu"> 
+              <div class="topnav"> <a class="mobile-active" href="#home"> </a><a class="icon" href="javascript:void(0);" id="mobile"><i class="fa fa-bars"></i></a></div>
+            </div>
           </div>
-          <div class="mobile-menu"> 
-            <div class="topnav"> <a class="mobile-active" href="#home"> </a><a class="icon" href="javascript:void(0);" id="mobile"><i class="fa fa-bars"></i></a></div>
-          </div>
-        </div>
-        <div class="myLinks"> 
           <div class="nav-mid"> 
             <ul class="nav-menu"><a href="./index.html"> 
                 <li class="nav-item" id="home"> <i class="fas fa-home"> </i>Home</li></a><a href="./about.html">
@@ -32,6 +32,8 @@
                 <li class="nav-item" id="tech"><i class="fas fa-book-open"> </i>Tech</li></a><a href="./contact.html">
                 <li class="nav-item active" id="contact"><i class="fas fa-envelope"> </i>Contact</li></a></ul>
           </div>
+        </div>
+        <div>
           <div class="nav-bottom"> 
             <div> 
               <ul> 
@@ -75,13 +77,16 @@
     <input type="hidden" name="contact" data-netlify="true"/>
     <script>
       document.getElementById("mobile").addEventListener("click", () => {
-      const x = document.querySelector(".myLinks");
+      const x = document.querySelector(".nav-mid");
+      const y = document.querySelector(".nav-bottom");
       x.classList.toggle("menu-active");
+      y.classList.toggle("menu-active");
       });
       
-      for (let item of document.querySelectorAll(".myLinks .nav-item")) {
+      for (let item of document.querySelectorAll(".nav-item")) {
       item.addEventListener("click", () => {
-      document.querySelector(".myLinks").classList.remove("menu-active");
+      document.querySelector(".nav-mid").classList.remove("menu-active");
+      document.querySelector(".nav-bottom").classList.remove("menu-active");
       });
       }
     </script>

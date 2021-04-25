@@ -64,7 +64,7 @@
 .submit-btn {
   padding: 12px 18px;
   color: #aec5d8;
-  background-color: #074377;
+  background-color: #043866;
   border-radius: 5px;
   font-size: 1rem;
   border: none; }
@@ -123,10 +123,12 @@
 
 @media screen and (max-width: 590px) {
   body {
-    padding: 0 !important; }
+    padding: 0 !important;
+    display: block; }
   #app-wrapper {
     display: flex !important;
     flex-direction: column !important;
+    width: auto;
     margin: 10px !important;
     height: 100% !important; }
     #app-wrapper #app-nav {
@@ -162,22 +164,29 @@
         color: white;
         font-size: 25px; }
       #app-wrapper .mobile-menu .topnav a:hover {
-        background-color: #074377;
+        background-color: #043866;
         color: #fff; }
       #app-wrapper .mobile-menu .mobile-active {
         color: white; }
   /* Hide the links inside the navigation menu (except for logo/home) */
-  .myLinks {
+  #app-wrapper #app-nav .nav-mid {
     display: none;
     height: 360px !important;
-    width: 95% !important;
-    background-color: #074377;
+    width: 100% !important;
+    background-color: #043866;
     z-index: 20 !important;
     position: absolute !important; }
+  #app-wrapper #app-nav .nav-bottom {
+    display: none; }
   .menu-active {
-    display: block; }
+    display: block !important; }
   .nav-bottom {
-    height: 60px !important; }
+    height: 60px !important;
+    z-index: 200 !important;
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    margin-left: -70px; }
     .nav-bottom ul {
       left: 80px !important; } }
 

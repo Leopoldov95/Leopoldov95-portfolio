@@ -13,10 +13,12 @@
 @media screen and (max-width: $sm) {
   body {
     padding: 0 !important;
+    display: block;
   }
   #app-wrapper {
     display: flex !important;
     flex-direction: column !important;
+    width: auto;
     margin: 10px !important;
     height: 100% !important;
     #app-nav {
@@ -77,21 +79,29 @@
     }
   }
   /* Hide the links inside the navigation menu (except for logo/home) */
-  .myLinks {
+  #app-wrapper #app-nav .nav-mid {
     display: none;
     height: 360px !important;
-    width: 95% !important;
+    width: 100% !important;
     background-color: $bg-primary;
     z-index: 20 !important;
     position: absolute !important;
   }
+  #app-wrapper #app-nav .nav-bottom {
+    display: none;
+  }
 
   .menu-active {
-    display: block;
+    display: block !important;
   }
 
   .nav-bottom {
     height: 60px !important;
+    z-index: 200 !important;
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    margin-left: -70px;
     ul {
       left: 80px !important;
     }
