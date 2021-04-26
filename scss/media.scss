@@ -1,44 +1,36 @@
 //imports
 @import "utilities";
 
-@media screen and (max-width: $md) {
-  body {
-    height: 100% !important;
-  }
-  #app-wrapper {
-    margin-top: 4rem !important;
-  }
-}
-
 @media screen and (max-width: $sm) {
   body {
-    padding: 0 !important;
+    padding: 0;
     display: block;
+    height: 100%;
   }
   #app-wrapper {
-    display: flex !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
     width: auto;
-    margin: 10px !important;
-    height: 100% !important;
+    margin: 10px;
+    height: 100%;
     #app-nav {
-      margin: 0 !important;
-      width: 100% !important;
-      max-width: $sm i !important;
-      overflow-y: visible !important;
+      margin: 0;
+      width: 100%;
+      max-width: $sm;
+      overflow-y: visible;
 
       background: #5555;
       margin: auto;
-      height: 100% !important;
-      border-right: none !important;
+      height: 100%;
+      border-right: none;
       .nav-top {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         padding: 10px 16px;
         img {
-          height: 80px !important;
-          width: 80px !important;
+          height: 80px;
+          width: 80px;
           margin-right: 8px;
         }
 
@@ -50,61 +42,57 @@
         h3 {
           font-size: 1rem;
         }
+        .mobile-menu {
+          display: block;
+
+          // align-self: flex-end;
+          /* Style navigation menu links */
+          .topnav a {
+            color: white;
+
+            font-size: 25px;
+          }
+
+          /* Style the hamburger menu */
+
+          /* Add a grey background color on mouse-over */
+          .topnav a:hover {
+            background-color: $bg-primary;
+            color: #fff;
+          }
+
+          /* Style the active link (or home/logo) */
+          .mobile-active {
+            color: white;
+          }
+        }
       }
-    }
-
-    .mobile-menu {
-      display: block !important;
-
-      // align-self: flex-end;
-      /* Style navigation menu links */
-      .topnav a {
-        color: white;
-
-        font-size: 25px;
-      }
-
-      /* Style the hamburger menu */
-
-      /* Add a grey background color on mouse-over */
-      .topnav a:hover {
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .nav-mid {
+        display: none;
+        height: 360px;
+        width: 100%;
         background-color: $bg-primary;
-        color: #fff;
+        z-index: 20;
+        position: absolute;
       }
-
-      /* Style the active link (or home/logo) */
-      .mobile-active {
-        color: white;
+      .nav-bottom {
+        display: none;
+        height: 60px;
+        z-index: 200;
+        position: absolute;
+        top: 420px;
+        left: 50%;
+        margin-left: -80px;
+        ul {
+          left: 80px;
+        }
       }
     }
-  }
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  #app-wrapper #app-nav .nav-mid {
-    display: none;
-    height: 360px !important;
-    width: 100% !important;
-    background-color: $bg-primary;
-    z-index: 20 !important;
-    position: absolute !important;
-  }
-  #app-wrapper #app-nav .nav-bottom {
-    display: none;
   }
 
   .menu-active {
     display: block !important;
-  }
-
-  .nav-bottom {
-    height: 60px !important;
-    z-index: 200 !important;
-    position: absolute;
-    top: 420px;
-    left: 50%;
-    margin-left: -70px;
-    ul {
-      left: 80px !important;
-    }
   }
 }
 
@@ -112,28 +100,33 @@
 // Mobile display
 @media screen and (max-width: $sm) {
   .home {
-    height: 100vh !important;
+    height: 100vh;
+    div {
+      h1 {
+        font-size: 40px;
+      }
 
-    h1 {
-      font-size: 40px !important;
-    }
-
-    p {
-      font-size: 1.2rem !important;
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
 }
 
 // About
 @media screen and (max-width: $sm) {
-  .content {
-    flex-direction: column !important;
+  .about {
+    div {
+      .content {
+        flex-direction: column;
 
-    .about-content {
-      display: block !important;
+        .about-content {
+          display: block;
 
-      .about-img {
-        float: none !important;
+          .about-img {
+            float: none;
+          }
+        }
       }
     }
   }
@@ -143,27 +136,51 @@
 // Mobile View
 
 @media screen and (max-width: 1200px) {
-  .flex-row {
-    grid-template-columns: auto auto !important;
+  .project {
+    div {
+      .content {
+        .flex-row {
+          grid-template-columns: auto auto;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 930px) {
-  .flex-row {
-    grid-template-columns: auto !important;
+  .project {
+    div {
+      .content {
+        .flex-row {
+          grid-template-columns: auto;
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: $md) {
-  .flex-row {
-    grid-template-columns: auto !important;
-  }
-  .card {
-    margin: 1rem 0 !important;
+  .project {
+    div {
+      .content {
+        .flex-row {
+          .card {
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: $sm) {
-  h2 {
-    font-size: 1.6rem !important;
+  .project {
+    div {
+      .content {
+        h2 {
+          font-size: 1.6rem;
+          padding: 0;
+        }
+      }
+    }
   }
 }
 
@@ -171,12 +188,14 @@
 //Mobile View
 @media screen and (max-width: $md) {
   .tech {
-    .content {
-      text-align: center;
-      li {
-        display: flex !important;
-        justify-content: space-between !important;
-        padding-right: 14px;
+    div {
+      .content {
+        text-align: center;
+        li {
+          display: flex;
+          justify-content: space-between;
+          padding-right: 14px;
+        }
       }
     }
   }
@@ -186,28 +205,40 @@
 // Mobile View
 
 @media screen and (max-width: 850px) {
-  #contact-form {
-    background-color: #fff !important;
-    max-width: 480px !important;
-    width: 100% !important;
+  .contact {
+    div {
+      .content {
+        #contact-form {
+          background-color: #fff;
+          max-width: 480px;
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: $sm) {
-  #contact-form {
-    form {
-      width: 100% !important;
+  .contact {
+    div {
+      .content {
+        #contact-form {
+          form {
+            width: 100%;
 
-      .form-border {
-        width: 150% !important;
-      }
+            .form-border {
+              width: 150%;
+            }
 
-      .form-text {
-        width: 80% !important;
-      }
+            .form-text {
+              width: 80%;
+            }
 
-      #form-area {
-        width: 150% !important;
+            #form-area {
+              width: 150%;
+            }
+          }
+        }
       }
     }
   }
