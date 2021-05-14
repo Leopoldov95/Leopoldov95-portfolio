@@ -235,8 +235,8 @@
         margin: 2rem 0; }
         .project div .content .flex-row .pokedex::before {
           background: url("../img/projects/pokedex.png") no-repeat center center/cover; }
-        .project div .content .flex-row .blue-shield:before {
-          background: url("../img/projects/blue-shield.png") no-repeat center center/cover; }
+        .project div .content .flex-row .ecomm:before {
+          background: url("../img/projects/cycle_ecomm.png") no-repeat center center/cover; }
         .project div .content .flex-row .weather:before {
           background: url("../img/projects/weather.png") no-repeat center center/cover; }
         .project div .content .flex-row .winery::before {
