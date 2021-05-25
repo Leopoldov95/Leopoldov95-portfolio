@@ -1,3 +1,12 @@
+.btn {
+  background-color: #5282ac;
+  padding: 8px 1rem;
+  border-radius: 5px; }
+
+.pdf-icon {
+  color: red;
+  font-size: 2rem; }
+
 .load {
   animation: fadein ease 600ms; }
 
@@ -361,10 +370,16 @@
           border: 2px solid #333; }
         .about div .content .about-content .about-img p {
           font-size: 12px; }
-      .about div .content .about-content a {
-        color: #5282ac; }
-      .about div .content .about-content a:hover {
-        color: #aec5d8; }
+      .about div .content .about-content .about-download {
+        display: flex;
+        align-items: center; }
+        .about div .content .about-content .about-download a {
+          display: inline-block;
+          color: white; }
+        .about div .content .about-content .about-download a:hover {
+          color: #aec5d8; }
+        .about div .content .about-content .about-download i {
+          margin-left: 1.5rem; }
 
 .contact {
   height: 100%;
@@ -504,7 +519,8 @@ span {
   max-height: 863px;
   max-width: 1500px;
   display: grid;
-  grid-template-columns: 1fr 4fr; }
+  grid-template-columns: 1fr 4fr;
+  padding-bottom: 10px; }
   #app-wrapper #app-nav {
     position: relative;
     overflow-y: auto;

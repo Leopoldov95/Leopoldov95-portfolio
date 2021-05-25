@@ -11,6 +11,18 @@ $nav-sec: hsl(208, 71.4%, 36.2%);
 $sm: 590px;
 $md: 768px;
 
+// generic button
+.btn {
+  background-color: $bg-sec;
+  padding: 8px 1rem;
+  border-radius: 5px;
+}
+
+.pdf-icon {
+  color: red;
+  font-size: 2rem;
+}
+
 //animation on load
 .load {
   animation: fadein ease 600ms;

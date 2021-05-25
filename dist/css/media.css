@@ -1,3 +1,12 @@
+.btn {
+  background-color: #5282ac;
+  padding: 8px 1rem;
+  border-radius: 5px; }
+
+.pdf-icon {
+  color: red;
+  font-size: 2rem; }
+
 .load {
   animation: fadein ease 600ms; }
 

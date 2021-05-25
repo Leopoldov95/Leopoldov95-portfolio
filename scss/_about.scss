@@ -84,11 +84,20 @@
             font-size: 12px;
           }
         }
-        a {
-          color: $bg-sec;
-        }
-        a:hover {
-          color: $text-sec;
+
+        .about-download {
+          display: flex;
+          align-items: center;
+          a {
+            display: inline-block;
+            color: white;
+          }
+          a:hover {
+            color: $text-sec;
+          }
+          i {
+            margin-left: 1.5rem;
+          }
         }
       }
     }
