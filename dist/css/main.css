@@ -121,7 +121,6 @@
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       text-align: center;
-      display: none;
       transition: all ease 500ms; }
     .card .img .btn-git {
       top: 70%;
