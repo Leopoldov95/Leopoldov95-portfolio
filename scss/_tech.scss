@@ -4,8 +4,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  border: 10px solid #fff;
-  background: #fff;
+
   div {
     position: relative;
 
@@ -20,6 +19,7 @@
       height: 100%;
       display: block;
       opacity: 0.6;
+      border-top-right-radius: 10px;
     }
 
     .header::after {
@@ -32,10 +32,11 @@
       height: 100%;
       display: block;
       z-index: -1;
+      border-top-right-radius: 10px;
     }
 
     .header {
-      height: 310px;
+      height: 250px;
       z-index: 10;
       h1 {
         position: absolute;
@@ -74,7 +75,7 @@
         grid-template-columns: 1fr 1fr 4fr;
         align-items: center;
         font-size: 1.5rem;
-        background-color: $text-primary;
+        background-color: rgba(255, 255, 255, 0.3);
         margin: 1rem 0;
       }
     }

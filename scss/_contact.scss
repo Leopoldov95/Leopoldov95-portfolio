@@ -4,8 +4,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  border: 10px solid #fff;
-  background: #fff;
+
   div {
     position: relative;
 
@@ -20,6 +19,7 @@
       height: 100%;
       display: block;
       opacity: 0.6;
+      border-top-right-radius: 10px;
     }
 
     .header::after {
@@ -32,10 +32,11 @@
       height: 100%;
       display: block;
       z-index: -1;
+      border-top-right-radius: 10px;
     }
 
     .header {
-      height: 310px;
+      height: 250px;
       z-index: 10;
       h1 {
         position: absolute;
@@ -58,7 +59,7 @@
 
       #contact-form {
         margin: auto;
-        background: $text-sec;
+        background-color: rgba(255, 255, 255, 0.3);
         text-align: center;
         width: 540px;
         padding: 2rem;
@@ -75,7 +76,7 @@
           margin: 6px;
           padding: 10px 12px;
           border-radius: 5px;
-          border: 2px solid rgb(173, 173, 173);
+
           background-color: #fff;
         }
 
@@ -104,7 +105,7 @@
 
         #form-area {
           width: 400px;
-          border: 2px solid rgb(173, 173, 173);
+          border: none;
           border-radius: 5px;
           margin: 6px 0;
           height: 300px;
@@ -112,8 +113,8 @@
         }
 
         #form-area:focus {
-          border: 2px solid $bg-sec;
-          outline: $bg-sec;
+          border: none;
+          outline: none;
         }
       }
     }

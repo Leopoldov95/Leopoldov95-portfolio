@@ -2,6 +2,17 @@
 @import "utilities";
 
 @media screen and (max-width: $sm) {
+  ::-webkit-scrollbar-track {
+    //-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    border-radius: 0;
+
+    background: $bg-primary;
+  }
   body {
     padding: 0;
     display: block;
@@ -11,7 +22,7 @@
     display: flex;
     flex-direction: column;
     width: auto;
-    margin: 10px;
+    margin: 0;
     height: 100%;
     #app-nav {
       margin: 0;
@@ -20,14 +31,16 @@
       overflow-y: visible;
 
       background: #5555;
-      margin: auto;
-      height: 100%;
+
       border-right: none;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
       .nav-top {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         padding: 10px 16px;
+        background-color: rgba(0, 0, 255, 0.1);
         img {
           height: 80px;
           width: 80px;
@@ -72,7 +85,7 @@
         display: none;
         height: 360px;
         width: 100%;
-        background-color: $bg-primary;
+        background-color: rgba(26, 44, 60, 0.95);
         z-index: 20;
         position: absolute;
       }
@@ -91,6 +104,28 @@
     }
   }
 
+  #app-content {
+    border-radius: 0;
+    overflow-y: auto;
+
+    div {
+      .header {
+        height: 190px !important;
+
+        h1 {
+          font-size: 1.4rem;
+        }
+
+        &::before {
+          border-radius: 0;
+        }
+        &::after {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
   .menu-active {
     display: block !important;
   }
@@ -102,12 +137,24 @@
   .home {
     height: 100vh;
     div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 80%;
+      margin: auto;
+
       h1 {
         font-size: 40px;
       }
 
       p {
         font-size: 1.2rem;
+      }
+
+      i {
+        margin-top: 0;
       }
     }
   }
@@ -209,9 +256,9 @@
     div {
       .content {
         #contact-form {
-          background-color: #fff;
+          background-color: transparent;
           max-width: 480px;
-          width: 100%;
+          width: 90%;
         }
       }
     }
