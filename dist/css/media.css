@@ -32,7 +32,7 @@
   background-color: rgba(8, 46, 80, 0.2);
   border-right: 6px solid linear-gradient(to top left, #0c0d5c, #d04931); }
   .active i {
-    color: #09467c; }
+    color: #2f129c; }
 
 .inner-border {
   outline: 1px solid #fff;
@@ -166,6 +166,8 @@
     padding: 0;
     display: block;
     height: 100%; }
+  .active i {
+    color: #3834f3; }
   #app-wrapper {
     display: flex;
     flex-direction: column;
@@ -177,7 +179,9 @@
       width: 100%;
       max-width: 590px;
       overflow-y: visible;
-      background: #5555;
+      background: -webkit-linear-gradient(left, #0b2f88, #0f0835);
+      background: -moz-linear-gradient(left, #0b2f88, #0f0835);
+      background: linear-gradient(to right, #0b2f88, #0f0835);
       border-right: none;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;

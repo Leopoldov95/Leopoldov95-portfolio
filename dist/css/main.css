@@ -32,7 +32,7 @@
   background-color: rgba(8, 46, 80, 0.2);
   border-right: 6px solid linear-gradient(to top left, #0c0d5c, #d04931); }
   .active i {
-    color: #09467c; }
+    color: #2f129c; }
 
 .inner-border {
   outline: 1px solid #fff;
@@ -398,6 +398,8 @@
           color: #aec5d8; }
         .about div .content .about-content .about-download i {
           margin-left: 1.5rem; }
+        .about div .content .about-content .about-download > a:first-child {
+          margin-right: 1rem; }
 
 .contact {
   height: 100%;
@@ -569,8 +571,7 @@ span {
       #app-wrapper #app-nav .nav-top img {
         height: 120px;
         width: 120px;
-        border-radius: 50%;
-        border: 1px solid #f5f5f5; }
+        border-radius: 50%; }
       #app-wrapper #app-nav .nav-top .mobile-menu {
         display: none; }
     #app-wrapper #app-nav .nav-bottom {

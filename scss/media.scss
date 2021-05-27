@@ -18,19 +18,29 @@
     display: block;
     height: 100%;
   }
+
+  .active {
+    i {
+      color: #3834f3;
+    }
+  }
   #app-wrapper {
     display: flex;
     flex-direction: column;
     width: auto;
     margin: 0;
     height: 100%;
+
     #app-nav {
       margin: 0;
       width: 100%;
       max-width: $sm;
       overflow-y: visible;
 
-      background: #5555;
+      //background: #5555;
+      background: -webkit-linear-gradient(left, #0b2f88, #0f0835);
+      background: -moz-linear-gradient(left, #0b2f88, #0f0835);
+      background: linear-gradient(to right, #0b2f88, #0f0835);
 
       border-right: none;
       border-top-left-radius: 0;

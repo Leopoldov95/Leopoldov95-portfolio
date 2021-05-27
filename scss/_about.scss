@@ -98,6 +98,9 @@
           i {
             margin-left: 1.5rem;
           }
+          & > a:first-child {
+            margin-right: 1rem;
+          }
         }
       }
     }
