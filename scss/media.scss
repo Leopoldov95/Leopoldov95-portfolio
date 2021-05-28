@@ -30,7 +30,7 @@
     width: auto;
     margin: 0;
     height: 100%;
-
+    padding: 8px;
     #app-nav {
       margin: 0;
       width: 100%;
@@ -38,22 +38,26 @@
       overflow-y: visible;
 
       //background: #5555;
-      background: -webkit-linear-gradient(left, #0b2f88, #0f0835);
+      /* background: -webkit-linear-gradient(left, #0b2f88, #0f0835);
       background: -moz-linear-gradient(left, #0b2f88, #0f0835);
-      background: linear-gradient(to right, #0b2f88, #0f0835);
+      background: linear-gradient(to right, #0b2f88, #0f0835); */
 
       border-right: none;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
       .nav-top {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         padding: 10px 16px;
         background-color: rgba(0, 0, 255, 0.1);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
         img {
-          height: 80px;
-          width: 80px;
+          height: 60px;
+          width: 60px;
           margin-right: 8px;
         }
 
@@ -93,22 +97,31 @@
       /* Hide the links inside the navigation menu (except for logo/home) */
       .nav-mid {
         display: none;
-        height: 360px;
+        height: 340px;
         width: 100%;
         background-color: rgba(26, 44, 60, 0.95);
         z-index: 20;
         position: absolute;
+
+        .nav-menu {
+          .nav-item {
+            font-size: 20px;
+          }
+        }
       }
       .nav-bottom {
         display: none;
         height: 60px;
         z-index: 200;
         position: absolute;
-        top: 420px;
+        top: 385px;
         left: 50%;
         margin-left: -80px;
         ul {
           left: 80px;
+          li {
+            font-size: 1.3rem;
+          }
         }
       }
     }
@@ -116,8 +129,6 @@
 
   #app-content {
     border-radius: 0;
-    overflow-y: auto;
-
     div {
       .header {
         height: 190px !important;
