@@ -50,7 +50,7 @@
 
     .content {
       color: #333;
-      padding: 1.6rem;
+      padding: 1.6rem 0;
 
       h2 {
         font-size: 2rem;
@@ -59,10 +59,10 @@
 
       #contact-form {
         margin: auto;
-        background-color: rgba(255, 255, 255, 0.3);
+
         text-align: center;
-        width: 540px;
-        padding: 2rem;
+        width: 100%;
+
         border-radius: 8px;
         form {
           display: flex;
@@ -72,7 +72,7 @@
         }
 
         .form-border {
-          width: 400px;
+          width: 90%;
           margin: 6px;
           padding: 10px 12px;
           border-radius: 5px;
@@ -103,8 +103,14 @@
           outline: $bg-sec;
         }
 
+        .submit-btn {
+          i {
+            color: white;
+          }
+        }
+
         #form-area {
-          width: 400px;
+          width: 90%;
           border: none;
           border-radius: 5px;
           margin: 6px 0;

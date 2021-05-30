@@ -277,9 +277,7 @@
     div {
       .content {
         #contact-form {
-          background-color: transparent;
-          max-width: 480px;
-          width: 90%;
+          width: 100%;
         }
       }
     }
@@ -295,7 +293,7 @@
             width: 100%;
 
             .form-border {
-              width: 150%;
+              width: 90%;
             }
 
             .form-text {
@@ -303,7 +301,7 @@
             }
 
             #form-area {
-              width: 150%;
+              width: 90%;
             }
           }
         }
