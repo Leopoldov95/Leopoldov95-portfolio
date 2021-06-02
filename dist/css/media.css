@@ -100,17 +100,14 @@
   color: #fff; }
 
 .card {
-  box-shadow: 5px 4px 20px -4px rgba(0, 0, 0, 0.68);
   margin: 2rem;
   text-align: center;
   border-radius: 8px;
-  background-color: #eeeeee; }
-  .card h4 {
-    font-size: 1.4rem;
-    padding: 1rem; }
+  background-color: transparent h4;
+    background-color-font-size: 1.4rem;
+    background-color-padding: 1rem; }
   .card .img::before {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 5px;
     position: absolute;
     content: "";
     top: 0;
@@ -120,28 +117,14 @@
     display: block;
     z-index: -1; }
   .card .img {
-    width: 240px;
-    height: 200px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    width: 300px;
+    height: 215px;
+    border-radius: 5px;
     z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /*  a {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      text-align: center;
-      //display: none;
-      transition: all ease 500ms;
-    }
-    a:hover {
-      transform: translateX(-50%) translateY(-50%);
-      transform: scale(1.1);
-    } */ }
+    align-items: center; }
     .card .img a {
       display: inline-block;
       margin: 1rem 0;
@@ -149,11 +132,22 @@
       transition: all ease 500ms; }
       .card .img a:hover {
         transform: scale(1.1); }
-    .card .img .btn-git {
-      top: 70%;
-      width: 7rem; }
-      .card .img .btn-git i {
-        padding-right: 8px; }
+  .card div:nth-child(2) {
+    width: 300px; }
+    .card div:nth-child(2) h1 {
+      margin: 6px 0; }
+    .card div:nth-child(2) p {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 1rem; }
+    .card div:nth-child(2) div {
+      display: flex;
+      justify-content: space-evenly; }
+  .card .btn-git {
+    top: 70%;
+    width: 7rem; }
+    .card .btn-git i {
+      padding-right: 8px; }
 
 @media screen and (max-width: 590px) {
   ::-webkit-scrollbar-track {
