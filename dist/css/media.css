@@ -167,21 +167,14 @@
     flex-direction: column;
     width: auto;
     margin: 0;
-    height: 100%;
-    padding: 8px; }
+    height: 100%; }
     #app-wrapper #app-nav {
       margin: 0;
       width: 100%;
       max-width: 590px;
       overflow-y: visible;
-      /* background: -webkit-linear-gradient(left, #0b2f88, #0f0835);
-      background: -moz-linear-gradient(left, #0b2f88, #0f0835);
-      background: linear-gradient(to right, #0b2f88, #0f0835); */
       border-right: none;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
+      border-radius: 0;
       /* Hide the links inside the navigation menu (except for logo/home) */ }
       #app-wrapper #app-nav .nav-top {
         display: flex;
@@ -189,8 +182,7 @@
         justify-content: space-evenly;
         padding: 10px 16px;
         background-color: rgba(0, 0, 255, 0.1);
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px; }
+        border-radius: 0; }
         #app-wrapper #app-nav .nav-top img {
           height: 60px;
           width: 60px;
