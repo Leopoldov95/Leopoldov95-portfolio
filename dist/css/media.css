@@ -42,27 +42,8 @@
   font-size: 3.5rem;
   padding: 10px 10px 10px 1rem; }
 
-.logo-html {
-  color: orangered; }
-
-.logo-css {
-  color: blue; }
-
-.logo-sass {
-  color: palevioletred; }
-
-.logo-js {
-  color: gold; }
-
-.logo-node {
-  color: green; }
-
-.logo-react {
-  color: dodgerblue; }
-
 .logo-sm {
-  height: 80px;
-  width: 80px; }
+  height: 35px; }
 
 .logo-lg {
   height: 60px;
@@ -182,7 +163,8 @@
         justify-content: space-evenly;
         padding: 10px 16px;
         background-color: rgba(0, 0, 255, 0.1);
-        border-radius: 0; }
+        border-radius: 0;
+        z-index: 99; }
         #app-wrapper #app-nav .nav-top img {
           height: 60px;
           width: 60px;
@@ -264,7 +246,8 @@
     .about div .content .about-content {
       display: block; }
       .about div .content .about-content .about-img {
-        float: none; } }
+        float: none;
+        margin-bottom: 1rem; } }
 
 @media screen and (max-width: 1200px) {
   .project div .content .flex-row {
@@ -286,10 +269,8 @@
 @media screen and (max-width: 768px) {
   .tech div .content {
     text-align: center; }
-    .tech div .content li {
-      display: flex;
-      justify-content: space-between;
-      padding-right: 14px; } }
+    .tech div .content ul li {
+      margin: 8px 4px; } }
 
 @media screen and (max-width: 850px) {
   .contact div .content #contact-form {

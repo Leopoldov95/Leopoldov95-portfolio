@@ -46,6 +46,7 @@
         padding: 10px 16px;
         background-color: rgba(0, 0, 255, 0.1);
         border-radius: 0;
+        z-index: 99;
         img {
           height: 60px;
           width: 60px;
@@ -182,6 +183,7 @@
 
           .about-img {
             float: none;
+            margin-bottom: 1rem;
           }
         }
       }
@@ -248,11 +250,12 @@
     div {
       .content {
         text-align: center;
-        li {
-          display: flex;
-          justify-content: space-between;
-          padding-right: 14px;
+        ul {
+           li {
+          margin: 8px 4px;
         }
+        }
+       
       }
     }
   }
