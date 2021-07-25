@@ -481,9 +481,13 @@
           outline: linear-gradient(to top left, #0c0d5c, #d04931); }
         .contact div .content #contact-form .submit-btn {
           margin-top: 1rem;
-          box-shadow: 0px 4px 8px #9886a88f; }
-          .contact div .content #contact-form .submit-btn i {
+          box-shadow: 0px 4px 8px #9886a88f;
+          color: #ffffffba; }
+          .contact div .content #contact-form .submit-btn:hover {
+            cursor: pointer;
             color: white; }
+          .contact div .content #contact-form .submit-btn i {
+            color: inherit; }
         .contact div .content #contact-form #form-area {
           width: 90%;
           box-shadow: 0px 4px 8px #9886a88f;

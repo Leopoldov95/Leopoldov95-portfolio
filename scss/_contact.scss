@@ -106,8 +106,13 @@
         .submit-btn {
           margin-top: 1rem;
           box-shadow: 0px 4px 8px #9886a88f;
-          i {
+          color: #ffffffba;
+          &:hover {
+            cursor: pointer;
             color: white;
+          }
+          i {
+            color: inherit;
           }
         }
 
