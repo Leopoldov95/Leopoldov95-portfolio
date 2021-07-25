@@ -37,10 +37,12 @@
 .pill {
   border-radius: 10px;
   margin-right: 12px;
+  margin-bottom: 10px;
   width: 73px;
   font-size: 14px;
   padding: 2px 4px;
   background-color: turquoise;
+  box-shadow: 0px 4px 8px #9886a88f;
   color: white; }
 
 .inner-border {
@@ -74,6 +76,7 @@
   padding: 12px 12px;
   color: #f5f5f5;
   background: #333;
+  box-shadow: 0px 4px 8px #9886a88f;
   border-radius: 5px;
   font-size: 1rem;
   opacity: 0.9; }
@@ -109,6 +112,7 @@
     z-index: -1; }
   .card .img {
     height: 215px;
+    box-shadow: 0px 4px 8px #9886a88f;
     border-radius: 5px;
     z-index: 10;
     display: flex;
@@ -133,6 +137,7 @@
     justify-content: space-evenly; }
   .card .card-pills {
     justify-content: center !important;
+    flex-wrap: wrap;
     margin-bottom: 1rem; }
   .card .btn-git {
     top: 70%;
@@ -389,6 +394,7 @@
         align-items: center; }
         .about div .content .about-content .about-download a {
           display: inline-block;
+          box-shadow: 0px 4px 8px #9886a88f;
           color: white; }
         .about div .content .about-content .about-download a:hover {
           color: #aec5d8; }
@@ -456,6 +462,7 @@
           margin: 6px;
           padding: 10px 12px;
           border-radius: 5px;
+          box-shadow: 0px 4px 8px #9886a88f;
           background-color: #fff; }
         .contact div .content #contact-form i {
           padding-right: 8px;
@@ -472,10 +479,14 @@
         .contact div .content #contact-form .form-border:focus {
           border: 2px solid linear-gradient(to top left, #0c0d5c, #d04931);
           outline: linear-gradient(to top left, #0c0d5c, #d04931); }
-        .contact div .content #contact-form .submit-btn i {
-          color: white; }
+        .contact div .content #contact-form .submit-btn {
+          margin-top: 1rem;
+          box-shadow: 0px 4px 8px #9886a88f; }
+          .contact div .content #contact-form .submit-btn i {
+            color: white; }
         .contact div .content #contact-form #form-area {
           width: 90%;
+          box-shadow: 0px 4px 8px #9886a88f;
           border: none;
           border-radius: 5px;
           margin: 6px 0;
