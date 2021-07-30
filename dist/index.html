@@ -50,7 +50,7 @@
         <div class="home inner-border load"> 
           <div> 
             <h1>Welcome </h1>
-            <p>My name is Leopoldo Ortega and I am a Web Developer.</p><a class="home-about" href="./projects.html"><i class="fas fa-user"> </i>View My Work</a>
+            <p>My name is Leopoldo Ortega and I am a Web Developer.</p><a class="home-about" href="./projects.html"><i class="fas fa-laptop-code"> </i>View My Work</a>
           </div>
         </div>
       </div>
@@ -61,15 +61,8 @@
       const x = document.querySelector(".nav-mid");
       const y = document.querySelector(".nav-bottom");
       x.classList.toggle("menu-active");
-      y.classList.toggle("menu-active");
+      y.classList.toggle("menu-active-bottom");
       });
-      
-      for (let item of document.querySelectorAll(".nav-item")) {
-      item.addEventListener("click", () => {
-      document.querySelector(".nav-mid").classList.remove("menu-active");
-      document.querySelector(".nav-bottom").classList.remove("menu-active");
-      });
-      }
     </script>
   </body>
 </html>

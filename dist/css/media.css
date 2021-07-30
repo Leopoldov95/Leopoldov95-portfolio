@@ -204,7 +204,8 @@
           #app-wrapper #app-nav .nav-top .mobile-menu .mobile-active {
             color: white; }
       #app-wrapper #app-nav .nav-mid {
-        display: none;
+        left: -100%;
+        transition: all ease 300ms;
         height: 340px;
         width: 100%;
         background-color: rgba(26, 44, 60, 0.95);
@@ -213,13 +214,11 @@
         #app-wrapper #app-nav .nav-mid .nav-menu .nav-item {
           font-size: 20px; }
       #app-wrapper #app-nav .nav-bottom {
-        display: none;
         height: 60px;
         z-index: 200;
         position: absolute;
         top: 385px;
-        left: 50%;
-        margin-left: -80px; }
+        left: -100%; }
         #app-wrapper #app-nav .nav-bottom ul {
           left: 80px; }
           #app-wrapper #app-nav .nav-bottom ul li {
@@ -235,7 +234,12 @@
       #app-content div .header::after {
         border-radius: 0; }
   .menu-active {
-    display: block !important; } }
+    transition: all ease 300ms;
+    left: 0 !important; }
+  .menu-active-bottom {
+    transition: all ease 300ms;
+    transform: translateX(-50%);
+    left: 50% !important; } }
 
 @media screen and (max-width: 590px) {
   .home {

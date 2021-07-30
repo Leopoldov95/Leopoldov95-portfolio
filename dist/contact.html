@@ -80,15 +80,8 @@
       const x = document.querySelector(".nav-mid");
       const y = document.querySelector(".nav-bottom");
       x.classList.toggle("menu-active");
-      y.classList.toggle("menu-active");
+      y.classList.toggle("menu-active-bottom");
       });
-      
-      for (let item of document.querySelectorAll(".nav-item")) {
-      item.addEventListener("click", () => {
-      document.querySelector(".nav-mid").classList.remove("menu-active");
-      document.querySelector(".nav-bottom").classList.remove("menu-active");
-      });
-      }
     </script>
   </body>
 </html>

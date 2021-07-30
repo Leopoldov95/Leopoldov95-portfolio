@@ -86,7 +86,8 @@
       }
       /* Hide the links inside the navigation menu (except for logo/home) */
       .nav-mid {
-        display: none;
+        left: -100%;
+        transition: all ease 300ms;
         height: 340px;
         width: 100%;
         background-color: rgba(26, 44, 60, 0.95);
@@ -100,13 +101,11 @@
         }
       }
       .nav-bottom {
-        display: none;
         height: 60px;
         z-index: 200;
         position: absolute;
         top: 385px;
-        left: 50%;
-        margin-left: -80px;
+        left: -100%;
         ul {
           left: 80px;
           li {
@@ -138,7 +137,13 @@
   }
 
   .menu-active {
-    display: block !important;
+    transition: all ease 300ms;
+    left: 0 !important;
+  }
+  .menu-active-bottom {
+    transition: all ease 300ms;
+    transform: translateX(-50%);
+    left: 50% !important;
   }
 }
 
@@ -207,13 +212,13 @@
 }
 
 @media screen and (max-width: 970px) {
-.project {
-  div {
-    .card {
-      flex-basis: 72%;
+  .project {
+    div {
+      .card {
+        flex-basis: 72%;
+      }
     }
   }
-}
 }
 
 @media screen and (max-width: 930px) {
@@ -263,11 +268,10 @@
       .content {
         text-align: center;
         ul {
-           li {
-          margin: 8px 4px;
+          li {
+            margin: 8px 4px;
+          }
         }
-        }
-       
       }
     }
   }
