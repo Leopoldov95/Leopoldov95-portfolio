@@ -1,4 +1,5 @@
 # My Personal Portfolio
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f9ff83d6-2b95-4422-b50b-62431851294e/deploy-status)](https://app.netlify.com/sites/leoortega/deploys)
 ## Table of Contents
 * [Screenshot](#screenshot)
 * [General Info](#general-info)
