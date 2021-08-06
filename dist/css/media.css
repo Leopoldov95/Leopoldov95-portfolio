@@ -66,6 +66,7 @@
   color: #aec5d8;
   padding-left: 2rem; }
   .nav-item i {
+    width: 45px;
     padding-right: 1rem; }
 
 .nav-item:hover {
