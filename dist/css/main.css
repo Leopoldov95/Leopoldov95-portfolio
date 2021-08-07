@@ -41,7 +41,7 @@
   width: 73px;
   font-size: 14px;
   padding: 2px 4px;
-  background-color: turquoise;
+  background-color: slateblue;
   box-shadow: 0px 4px 8px #9886a88f;
   color: white; }
 
@@ -498,7 +498,7 @@
           border-radius: 5px;
           margin: 6px 0;
           height: 300px;
-          padding: 1rem; }
+          padding: 1rem 2rem; }
         .contact div .content #contact-form #form-area:focus {
           border: none;
           outline: none; }
@@ -528,7 +528,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: linear-gradient(to top left, #0c0d5c, #d04931);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -605,6 +605,6 @@ span {
   position: relative;
   overflow: auto;
   overflow-y: overlay;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px; }
