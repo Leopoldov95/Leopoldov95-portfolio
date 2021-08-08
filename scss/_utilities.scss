@@ -63,13 +63,7 @@ $md: 768px;
 }
 
 // utilities
-.active {
-  background-color: $bg-dark;
-  border-right: 6px solid $bg-sec;
-  i {
-    color: #2f129c;
-  }
-}
+
 
 .pill {
   border-radius: 10px;
@@ -108,6 +102,15 @@ $md: 768px;
   i {
     width: 45px;
     padding-right: 1rem;
+  }
+}
+
+.nav-item.active {
+  background-color: $bg-dark;
+  border-right: 6px solid $bg-sec;
+  color: white;
+  i {
+    color: slateblue;
   }
 }
 
